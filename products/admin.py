@@ -6,7 +6,6 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'friendly_name',
-        'reuseable',
     )
 
 
@@ -15,6 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
         'category',
         'name',
         'description',
+        'colour',
         'price',
         'image',
     )

@@ -6,3 +6,18 @@ body, html {
 .fixed-top {
     background-color: none;
 }
+
+body {
+    background: url('/media/home_page_mask.png') no-repeat center center fixed;
+    background-size: auto;
+    background-color: beige;
+    height: 100vh;
+}
+
+.dropdown-menu {
+    background-color: beige;
+}
+
+.container-fluid {
+    display: block;
+}
