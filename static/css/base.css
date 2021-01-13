@@ -10,14 +10,18 @@ body, html {
 body {
     background: url('/media/home_page_mask.png') no-repeat center center fixed;
     background-size: auto;
-    background-color: beige;
+    background-color: #efebdf;
     height: 100vh;
 }
 
 .dropdown-menu {
-    background-color: beige;
+    background-color: #efebdf;
 }
 
-.container-fluid {
+/* .container-fluid {
     display: block;
+} */
+
+.header-container {
+    padding-top: 150px;
 }
