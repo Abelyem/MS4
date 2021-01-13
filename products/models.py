@@ -8,13 +8,16 @@ class Category(models.Model):
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
-    colour = models.CharField(max_length=254, null=True, blank=True)
+    reuseable = models.BooleanField(null=False, blank=False, default=True)
 
     def __str__(self):
         return self.name
- 
+
     def get_friendly_name(self):
         return self.friendly_name
+
+    def reuseable(self):
+        return self.reuseable
 
 
 class Product(models.Model):
