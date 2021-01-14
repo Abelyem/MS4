@@ -57,7 +57,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                                 <li><a class="dropdown-item" href="#">By Price</a></li>
-                                <li><a class="dropdown-item" href="#">All Products</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -84,13 +84,13 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex">
+                    <form class="d-flex justify-content-center">
                         <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
-                    <li class="list-inline-item">
+                    <li class="list-inline-item pt-2 px-1">
                         <a href="#">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag"></i></div>
@@ -107,6 +107,11 @@
                 </div>
             </div>
         </nav>
+        <div class="row">
+            <div class="text-center" style="background-color: red;">
+                <h5 class="logo-font my-1">Free delivery on orders over £{{ free_shipping_threshold }}!</h5>                
+            </div>
+        </div>
     </header>
 
     {% if messages %}
