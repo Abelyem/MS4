@@ -4,7 +4,7 @@ body, html {
 }
 
 .fixed-top {
-    background-color: none;
+    background-color: #fff;
 }
 
 body {
@@ -18,10 +18,17 @@ body {
     background-color: #efebdf;
 }
 
-/* .container-fluid {
-    display: block;
-} */
-
 .header-container {
     padding-top: 150px;
+}
+
+/* -- Code snippet from Boutique ado project */
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #fff;
+    z-index: -1;
 }
