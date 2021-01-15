@@ -18,9 +18,13 @@
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-3">
             {% if product.image_url %}
             <div class="card">
-                <img class="card-img-top" src="{{ product.image_url }}" alt="{{ product.name }}">
+                <a href="{% url 'mask_detail' product.id %}">
+                    <img class="card-img-top" src="{{ product.image_url }}" alt="{{ product.name }}">
+                </a>
             {% else %}
-                <img class="card-img-top" src="{{ MEDIA_URL }}" alt="{{ product.name }}">
+                <a href="{% url 'mask_detail' product.id %}"> 
+                    <img class="card-img-top" src="{{ MEDIA_URL }}" alt="{{ product.name }}">
+                </a>
             {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">{{ product.name }}</h5>
