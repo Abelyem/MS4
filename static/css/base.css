@@ -23,8 +23,14 @@ body {
 }
 
 .card-img-top {
-    max-height: 310px;
-    min-height: 310px;
+    max-height: 300px;
+    min-height: 300px;
+}
+
+.card-text {
+    max-height: 100px;
+    min-height: 100px;
+    overflow: scroll;
 }
 
 /* -- Code snippet from Boutique ado project */
