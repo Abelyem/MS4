@@ -23,8 +23,9 @@ body {
 }
 
 .card-img-top {
-    max-height: 300px;
-    min-height: 300px;
+    max-height: 35vh;
+    min-height: 35vh;
+    max-width: 50vh;
 }
 
 .card-text {
