@@ -33,7 +33,7 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
     display: grid;
     grid-template-columns: 1.2fr 1fr 0.5fr;
     grid-template-areas:
-    'mask-img mask-info checkout-content'; 
+    'mask-img mask-info'; 
     padding-top: 10vw;
 }
 
@@ -46,11 +46,6 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
 .mask-info {
     display: grid;
     grid-area: mask-info;
-    border: 1px dashed #04471C;
-}
-
-.checkout-content {
-    grid-area: checkout-content;
     border: 1px dashed #04471C;
 }
 
