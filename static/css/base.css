@@ -36,7 +36,7 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
 
 .mask-info-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.6fr 1fr;
     grid-template-areas:
     'mask-img mask-info'; 
     padding-top: 10vw;
@@ -46,6 +46,7 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
     display: grid;
     grid-area: mask-img;
     border: 1px dashed #04471C;
+    text-align: center;
 }
 
 .mask-info {
@@ -78,3 +79,13 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
     background: #fff;
     z-index: -1;
 }
+
+
+/* -- mask image and info will be stacked on screensizes smaller than 767.98px 
+on mask_detail.html  -- */
+
+@media (max-width: 767.98px) { 
+    .mask-info-container {
+        display: block;
+    }
+} 
