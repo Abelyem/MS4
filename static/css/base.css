@@ -16,6 +16,11 @@ body {
     background-color: #efebdf;
 }
 
+.dropdown-item:hover {
+    background-color: #efebdf;
+    font-weight: 500;
+}
+
 .fixed-top {
     background-color: #fff;
 }
@@ -31,7 +36,7 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
 
 .mask-info-container {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
     'mask-img mask-info'; 
     padding-top: 10vw;
