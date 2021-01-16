@@ -3,10 +3,6 @@ body, html {
     padding: 0;
 }
 
-.fixed-top {
-    background-color: #fff;
-}
-
 body {
     background: url('/media/home_page_mask.png') no-repeat center center fixed;
     background-size: auto;
@@ -14,13 +10,51 @@ body {
     height: 100vh;
 }
 
+/* -- base.html navbar styling -- */
+
 .dropdown-menu {
     background-color: #efebdf;
 }
 
+.fixed-top {
+    background-color: #fff;
+}
+
+/* -- index.html styling -- */
+
 .header-container {
     padding-top: 110px;
 }
+
+/* -- mask_detail.html styling for showing individual product, snippets copied 
+from a previous incomplete portfolio project of my own -- https://abel-portfolio-main.herokuapp.com/ */
+
+.mask-info-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.5fr;
+    grid-template-areas:
+    'mask-img mask-info checkout-content'; 
+    padding-top: 10vw;
+}
+
+.mask-img {
+    display: grid;
+    grid-area: mask-img;
+    border: 1px dashed #04471C;
+}
+
+.mask-info {
+    display: grid;
+    grid-area: mask-info;
+    border: 1px dashed #04471C;
+}
+
+.checkout-content {
+    grid-area: checkout-content;
+    border: 1px dashed #04471C;
+}
+
+/* -- Cards rendered in products.html and mask_detail.html -- */ 
 
 .card-img-top {
     max-height: 35vh;
@@ -34,7 +68,7 @@ body {
     overflow: scroll;
 }
 
-/* -- Code snippet from Boutique ado project */
+/* -- Code snippet from Boutique ado project used in products.html  */
 .overlay {
     height: 100%;
     width: 100%;

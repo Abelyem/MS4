@@ -12,28 +12,29 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            {% if mask_detail.image_url %}
-                <a href="{{ mask_detail.image_url }}" target="_blank">
-                    <img class="card-img-top" src="{{ mask_detail.image_url }}" alt="{{ mask_detail.name }}">
-                </a>
-            {% else %}
-                <a href="" target="_blank">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}" alt="{{ mask_detail.name }}">
-                </a>
-            {% endif %}
+
+<div class="mask-info-container container">
+    <div class="mask-img">
+        {% if mask_detail.image_url %}
+        <a href="{{ mask_detail.image_url }}" target="_blank">
+            <img class="card-img-top" src="{{ mask_detail.image_url }}" alt="{{ mask_detail.name }}">
+        </a>
+        {% else %}
+        <a href="" target="_blank">
+            <img class="card-img-top" src="{{ MEDIA_URL }}" alt="{{ mask_detail.name }}">
+        </a>
+        {% endif %}
+    </div>
+    <div class="mask-info">
+        <div class="card-body">
+            <h5 class="card-title">{{ mask_detail.name }}</h5>
+            <p class="card-text">{{ mask_detail.description }}</p>
+            <p class="card-subtitle">Category: {{ mask_detail.category }} shade</p>
         </div>
-        <div class="col">
-            <div class="card-body">
-                <h5 class="card-title">{{ mask_detail.name }} Should bve gere</h5>
-                <p class="card-text">{{ mask_detail.description }}</p>
-            <!--<p class="card-subtitle">Category: {{ product.category }} shade</p> -->
-            </div>
-        </div>
+    </div>
+    <div class="checkout-content">
+        CHECKOUT CONTENT TO BE ADDED
     </div>
 </div>
 
-<h5> TEST</h5>
 {% endblock %}
