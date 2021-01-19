@@ -14,27 +14,30 @@
 <div class="overlay"></div>
 
 <div class="mask-info-container container">
-    <div class="mask-img">
-        {% if mask_detail.image_url %}
-        <a href="{{ mask_detail.image_url }}" target="_blank">
-            <img class="card-img-top" src="{{ mask_detail.image_url }}" alt="{{ mask_detail.name }}">
-        </a>
-        {% else %}
-        <a href="" target="_blank">
-            <img class="card-img-top" src="{{ MEDIA_URL }}" alt="{{ mask_detail.name }}">
-        </a>
-        {% endif %}
-    </div>
-    <div class="mask-info">
-        <div class="card-body">
-            <h5 class="card-title">{{ mask_detail.name }}</h5>
-            <hr>
-            <p class="card-text">{{ mask_detail.description }}</p>
-            <p class="card-subtitle">Category: {{ mask_detail.category }} shade</p>
-            <hr>
-            <p>SPACE FOR WHERE CHECKOUT CONTENT WILL GO</p>
+        <div class="mask-img">
+            {% if mask_detail.image_url %}
+            <a href="{{ mask_detail.image_url }}" target="_blank">
+                <img class="card-img-top" src="{{ mask_detail.image_url }}" alt="{{ mask_detail.name }}">
+            </a>
+            {% else %}
+            <a href="" target="_blank">
+                <img class="card-img-top" src="{{ MEDIA_URL }}" alt="{{ mask_detail.name }}">
+            </a>
+            {% endif %}
+        </div>
+        <div class="mask-info">
+            <div class="card-body">
+                <h5 class="card-title">{{ mask_detail.name }}</h5>
+                <hr>
+                <p class="card-text">{{ mask_detail.description }}</p>
+                <p class="card-subtitle">Category: {{ mask_detail.category }} shade</p>
+                <hr>
+                <p>SPACE FOR WHERE CHECKOUT CONTENT WILL GO</p>
+                <button type="button" class="btn btn-secondary">
+                    <a class="" href="{% url 'products' %}">Back to all products</a>
+                </button>
+            </div>
         </div>
     </div>
-</div>
 
 {% endblock %}
