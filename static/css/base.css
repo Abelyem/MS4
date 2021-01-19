@@ -7,7 +7,6 @@ body {
     background: url('/media/home_page_mask.png') no-repeat center center fixed;
     background-size: auto;
     background-color: #efebdf;
-    height: 100vh;
 }
 
 /* -- base.html navbar styling -- */
@@ -28,8 +27,9 @@ body {
 /* -- index.html styling -- */
 
 .header-container {
-    padding-top: 110px;
+    padding-top: 25vh;
 }
+
 
 /* -- mask_detail.html styling for showing individual product, snippets copied 
 from a previous incomplete portfolio project of my own -- https://abel-portfolio-main.herokuapp.com/ */
@@ -39,7 +39,7 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
     grid-template-columns: 0.6fr 1fr;
     grid-template-areas:
     'mask-img mask-info'; 
-    padding-top: 10vw;
+    padding-top: 15vh;
 }
 
 .mask-img {
@@ -61,6 +61,7 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
     max-height: 35vh;
     min-height: 35vh;
     max-width: 50vh;
+    object-fit: scale-down; 
 }
 
 .card-text {
