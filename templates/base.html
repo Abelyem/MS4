@@ -56,8 +56,9 @@
                                 Shop
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                <li><a class="dropdown-item" href="#">By Shade</a></li>
                                 <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=Dark">By Shade - Dark</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=Light">By Shade - Light</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -69,8 +70,8 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 My Account
                             </a>
-                            {% if request.user.is_authenticated %}
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {% if request.user.is_authenticated %}
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
                                 <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
                             {% else %}
