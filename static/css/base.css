@@ -27,7 +27,7 @@ body {
 /* -- index.html styling -- */
 
 .header-container {
-    padding-top: 25vh;
+    padding-top: 20vh;
 }
 
 
@@ -55,6 +55,12 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
     border: 1px dashed #04471C;
 }
 
+/* -- products.html styling -- */ 
+
+.product-page-title, h3 {
+    text-align: center;
+}
+
 /* -- Cards rendered in products.html and mask_detail.html -- */ 
 
 .card-img-top {
@@ -69,6 +75,7 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
     min-height: 100px;
     overflow: scroll;
 }
+
 
 /* -- Code snippet from Boutique ado project used in products.html  */
 .overlay {
