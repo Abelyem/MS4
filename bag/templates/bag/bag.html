@@ -16,21 +16,117 @@
 
     <div class="row">
         <div class="col">
-        <h4>Shopping Bag</h4>
-        <hr>
-        {% if bag_items %}
+            <h4>Shopping Bag</h4>
+            <hr>
+            {% if bag_items %}
 
-        {% else %}
-        <p>No items selected.</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col"></th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Remove</th>
+                    </tr>
+                </thead>
+
+                {% for item in bag_items %}
+                <tbody>
+                    <tr>
+                        <td><a href="{{ item.product.image_url }}" target="_blank">
+                                <img class="card-img-top" src="{{ item.product.image_url }}"
+                                    alt="{{ item.product.name }}"></a></td>
+                        <td>
+                            <p><strong>{{ item.product.name }}</strong></p>
+                            <p>{{ item.product.description }}</p>
+                        </td>
+                        <td>
+                            <p>£{{ item.product.price }}</p>
+                        </td>
+                        <td>
+                             <!-- <input type="number" class="" id="id_qty_{{ mask_detail.id.id }}" name="quantity" data-item_id="{{ mask_detail.id.id }}"
+                        placeholder="{{ item.quantity }}" min="1" max="99"> -->
+                            <p>{{ item.quantity }}</p>
+                        </td>
+                        <td>
+                            <p>£{{ item.product.price }}</p>
+                        </td>
+                        <td>
+                            <p class="text-center">
+                                <a class="remove" id="remove_{{ item.item_id }}"><i class="fas fa-times"></i></a>
+                            </p>
+                        </td>
+                    </tr>
+
+                    {% endfor %}
+
+                    <!-- Code snippet copied from Boutique ado project -->
+                    <tr>
+                        <td colspan="6" class="bag-total">
+                            <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                            <h4><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                            {% if free_delivery_delta > 0 %}
+                            <p>
+                                You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong>
+                                more!
+                            </p>
+                            {% endif %}
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="6" class="bag-total">
+                            <button type="button" class="btn btn-light">
+                                <a class="" href="{% url 'products' %}">Continue Shopping</a>
+                            </button>                            
+                            <button type="button" class="btn btn-light">
+                                <a class="" href="#">Checkout</a>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+            {% else %}
+
+            <p>No items selected.</p>
             <button type="button" class="btn btn-secondary">
-                    <a class="" href="{% url 'products' %}">Back to all products</a>
+                <a class="" href="{% url 'products' %}">Back to all products</a>
             </button>
 
-        {% endif %}
+            {% endif %}
+
+
         </div>
     </div>
 
 </div>
+
+
+{% endblock %}
+
+{% block postloadjs %}
+
+<script type="text/javascript">
+
+    // Remove item and reload on click -- from boutique_ado project
+    $('.remove').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/bag/remove/${itemId}`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+</script>
 
 
 {% endblock %}
