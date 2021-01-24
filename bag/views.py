@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 
 
 def view_bag(request):
-    """A view to return the shopping bag contents """
+    """A view to return the shopping bag contents --
+    from boutique ado with slight amendments """
 
     return render(request, 'bag/bag.html')
 
@@ -20,3 +21,16 @@ def add_to_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(redirect_url)
+
+
+def remove_from_bag(request, item_id):
+    """Remove the item from the shopping bag"""
+
+    try:
+        bag = request.session.get('bag', {})
+        bag.pop(item_id)
+        request.session["bag"] = bag
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)

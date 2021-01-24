@@ -53,6 +53,7 @@
                         <td>
                             <p>£{{ item.product.price }}</p>
                         </td>
+                        {% csrf_token %}
                         <td>
                             <p class="text-center">
                                 <a class="remove" id="remove_{{ item.item_id }}"><i class="fas fa-times"></i></a>
