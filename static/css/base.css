@@ -61,6 +61,14 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
     text-align: center;
 }
 
+.sort-by-price {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+}
+
+
 /* -- Cards rendered in products.html and mask_detail.html -- */ 
 
 .card-img-top {
@@ -88,6 +96,31 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
     z-index: -1;
 }
 
+/* -- Bag.html -- */
+
+.bag-total {
+    text-align: right;
+}
+
+
+/* -- styling for checkout.html -- */
+
+#payment-form {
+    padding: 3%;
+}
+
+.p2 {
+    padding: 1%;
+}
+
+
+@media (max-width: 767.98px) {
+    #order-summary {
+        margin-left: 3%;
+        padding: 3%;
+        border-style: inset;
+    }
+} 
 
 /* -- mask image and info will be stacked on screensizes smaller than 767.98px 
 on mask_detail.html  -- */
@@ -97,3 +130,5 @@ on mask_detail.html  -- */
         display: block;
     }
 } 
+
+
