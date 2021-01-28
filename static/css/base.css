@@ -113,14 +113,51 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
     padding: 1%;
 }
 
+#submit-button {
+    border: 0.5px solid #000;
+}
 
 @media (max-width: 767.98px) {
     #order-summary {
         margin-left: 3%;
         padding: 3%;
-        border-style: inset;
+        border-style: outset;
     }
 } 
+
+/* -- Stripe CSS within checkout.html --*/
+
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}
+
+#payment-form .form-control,
+#card-payment {
+    color: #000;
+}
 
 /* -- mask image and info will be stacked on screensizes smaller than 767.98px 
 on mask_detail.html  -- */
