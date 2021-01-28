@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid header-container">
+
+    <!-- Bootstrap jumbotron with edits made-->
+
+    <div class="row">
+        <div class="col">
+            <div class="jumbotron text-center">
+                <h1 class="display-4">Purchase successful!</h1>
+                <p class="lead">Your purchase is complete and on its way to you.</p>
+                <p>A confirmation email will be sent to {{ order.email }}.</p>
+                <hr class="my-4">
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 text-center">
+                    <h4>Order Summary:</h4>
+                    <p><strong>Order number:</strong> {{ order.order_number }}</p>
+                    {% for item in order.lineitems.all %}
+                    <p class="text-muted"> {{ item.product.name }} <strong>|</strong> Qty: {{ item.quantity }}</p>
+                    {% endfor %}
+                    <p class="text-muted">Purchase complete: {{ order.date }}</p>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <h4>Billing Details:</h4>
+                    <p class="text-muted p-0">{{ order.full_name }}</p>
+                    <p class="text-muted p-0">{{ order.street_address1 }}</p>
+                    {% if street_address2 %}
+                    <p class="text-muted p-0">{{ order.street_address2 }}</p>
+                    {% endif %}
+                    {% if postcode %}
+                    <p class="text-muted">{{ order.postcode }}</p>
+                    {% endif %}
+                    {% if county %}
+                    <p class="text-muted">{{ order.county }}</p>
+                    {% endif %}
+                    <p class="text-muted">{{ order.town_or_city }}</p>
+                    <p class="text-muted">{{ order.country }}</p>
+                </div>
+            </div>
+
+            <p class="lead text-center">
+                <button type="button" class="btn">
+                    <a class="" href="{% url 'products' %}">Back to all products</a>
+                </button>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
