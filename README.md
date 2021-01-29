@@ -30,14 +30,15 @@ raw=true
 alt=“Subject Pronouns”
 style=“margin-right: 10px;”
 />
---- Landing page image static/wireframes/img>>
+[Landing page - ](https://github.com/Abelyem/MS4/blob/master/static/wireframes/img/landing_page_wireframe.png)
 
 The landing page was designed with this template in mind. In terms of usage of colour, and the simple image + text
 combined to create a simple landing page which explains the purpose of the site whilst not overpopulating the user 
 with content / information when first visitng (or re-visitng) the site.
 
 The navbar was made to have a white background so it remains visible on all pages despite the content / colours that 
-may be shown. 
+may be shown, take a different approach than the wireframe as I wanted the search feature to be clearly visible at all
+times, and not hidden behind an image / other components.
 
 
 
