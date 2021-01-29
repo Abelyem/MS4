@@ -1,45 +1,55 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Masked
 
-Welcome Abelyem,
+## UX
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+The design of the site is bootstrap influenced in the use of the navbar, and other components of bootstrap such as 
+cards, and jumbotrons. The site itself is kept to be simple with a beige background colour on the index.html (landing) page,
+and a single image rendered. Within this initial page, any user who comes across the site will be able to figure out the
+purpose/reason the site exists - to sell face masks.
 
-## Gitpod Reminders
+### User Stories
+- As a user, I want to be able to use the site on any device
+- As a user, I want to be able to filter through all face masks available on the site
+- As a user, I want to be able to see all face masks set by price (low-high/high-low)
+- As a user, I want to be able to be able to filter the face masks by dark and light shades
+- As a user, I want to be able to search for specific face masks that suit my needs
+- As a user, I want to be able to add individual items to my bag and continue shopping
+- As a user, I want to be able to remove any items from my bag before proceeding to checkout
+- As a user, I want any items added to my bag to remain there unless removed by myself 
+- As a user, I want to be able to register and log into my individual account
+- As a user, I want the option to save my details when purchasing items 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
+## Wireframes
 
-Another blue button should appear to click: *Open Browser*.
+--- Landing page image static/wireframes/img>>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The landing page was designed with this template in mind. In terms of usage of colour, and the simple image + text
+combined to create a simple landing page which explains the purpose of the site whilst not overpopulating the user 
+with content / information when first visitng (or re-visitng) the site.
 
-A blue button should appear to click: *Make Public*,
+The navbar was made to have a white background so it remains visible on all pages despite the content / colours that 
+may be shown. 
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# Features
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Existing features
+### Logging in / registering an account
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### User session
+- Session cookies used to display registered users username on their profile, upon logging in.
+- Session cookies also used in index.html to present the username of the person who has submitted a review.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### About website
+- About section of the website to be visible within index.html - this will be side by side with the reviews submitted by registered users.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Features to implement
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
 
-Happy coding!
