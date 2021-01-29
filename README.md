@@ -24,12 +24,6 @@ purpose/reason the site exists - to sell face masks.
 
 ## Wireframes
 
-<img
-src="static/wireframes/img/landing_page_wireframe.png"
-raw=true
-alt=“Subject Pronouns”
-style=“margin-right: 10px;”
-/>
 [Landing page - ](https://github.com/Abelyem/MS4/blob/master/static/wireframes/img/landing_page_wireframe.png)
 
 The landing page was designed with this template in mind. In terms of usage of colour, and the simple image + text
@@ -50,8 +44,7 @@ times, and not hidden behind an image / other components.
 
 
 ### User session
-- Session cookies used to display registered users username on their profile, upon logging in.
-- Session cookies also used in index.html to present the username of the person who has submitted a review.
+- Session cookies used to keep items within customer's bag
 
 
 ### About website
