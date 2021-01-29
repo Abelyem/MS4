@@ -24,6 +24,10 @@ body {
     background-color: #fff;
 }
 
+.message-container {
+    z-index: 999999;
+}
+
 /* -- index.html styling -- */
 
 .header-container {
@@ -115,6 +119,10 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
 
 #submit-button {
     border: 0.5px solid #000;
+}
+
+.payment-error-message {
+    color: red;
 }
 
 @media (max-width: 767.98px) {

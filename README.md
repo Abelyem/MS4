@@ -18,11 +18,18 @@ purpose/reason the site exists - to sell face masks.
 - As a user, I want any items added to my bag to remain there unless removed by myself 
 - As a user, I want to be able to register and log into my individual account
 - As a user, I want the option to save my details when purchasing items 
+- As a user, I want to be able to see a history of all my previous purchases
 
 
 
 ## Wireframes
 
+<img
+src="static/wireframes/img/landing_page_wireframe.png"
+raw=true
+alt=“Subject Pronouns”
+style=“margin-right: 10px;”
+/>
 --- Landing page image static/wireframes/img>>
 
 The landing page was designed with this template in mind. In terms of usage of colour, and the simple image + text
