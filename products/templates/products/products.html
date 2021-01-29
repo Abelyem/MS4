@@ -40,6 +40,12 @@
                     <p class="card-text">{{ product.description }}</p>
                     <p class="card-text">£{{ product.price }}</p>
                     <p class="card-text">{{ product.category }} shade</p>
+                    {% if request.user.is_superuser %}
+                    <small>
+                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                        <a href="{% url 'delete_product' product.id %}">Delete</a>
+                    </small>
+                    {% endif %}
                 </div>
             </div>
         </div>

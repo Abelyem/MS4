@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid header-container">
+
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h2>Items Management - <small>Edit a product</small></h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <form class="#" method="POST" action="{% url 'edit_product' product.id %}" enctype="multipart/form-data">
+                {% csrf_token %}
+            {{ form | crispy }}
+            <div class="pt-3 pb-3">
+                <button class="btn btn-primary" type="submit">Update Product</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
