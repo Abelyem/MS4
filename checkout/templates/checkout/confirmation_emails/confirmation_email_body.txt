@@ -1,0 +1,14 @@
+Hello {{ order.full_name }}
+
+This is a confirmation email of your order made {{ order.date }}. Details of your order:
+
+Order number: {{ order.order_number }}
+Order total: £{{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
+
+Any questions please get in touch with us at {{ contact_email }}
+
+Thank you for your order, and we hope to see you again soon!
+
+Team @ Masked

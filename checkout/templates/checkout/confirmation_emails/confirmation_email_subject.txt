@@ -1,0 +1,1 @@
+Masked order confirmation - Order number: {{ order.order_number }}
