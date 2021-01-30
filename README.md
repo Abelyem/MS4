@@ -35,7 +35,7 @@ may be shown, take a different approach than the wireframe as I wanted the searc
 times, and not hidden behind an image / other components.
 
 
-
+[Items added to bag page - ]()
 
 # Features
 
