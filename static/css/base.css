@@ -113,8 +113,8 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
 }
 
 .card-text {
-    max-height: 100px;
-    min-height: 100px;
+    max-height: 4em;
+    min-height: 4em;
     overflow: scroll;
 }
 
