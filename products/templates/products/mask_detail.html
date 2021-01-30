@@ -44,12 +44,12 @@
                 </div>
 
                 <hr>
-                <button type="button" class="btn btn-secondary">
-                    <input class="" type="submit" value="Add to Bag">
+                <button type="button">
+                    <input class="btn btn-primary" type="submit" value="Add to Bag">
                 </button>
 
-               <button type="button" class="btn btn-secondary">
-                    <a class="" href="{% url 'products' %}">Back to all products</a>
+               <button type="button">
+                    <a class="btn btn-primary" href="{% url 'products' %}">Back to all products</a>
                 </button>
                     {% if request.user.is_superuser %}
                     <small>
