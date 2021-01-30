@@ -164,59 +164,59 @@ was picked up as an error by the HTML validator and was fixed following this che
 ## Manual Testing
 ### User stories
 - As a user, I want to be able to use the site on any device
-- - Due to the use of bootstrap classes / components the site is accessible on any device.
-- - Media queries used in an attempt to improve some aspects of the site on certain screen sizes/stack items when
+ - Due to the use of bootstrap classes / components the site is accessible on any device.
+ - Media queries used in an attempt to improve some aspects of the site on certain screen sizes/stack items when
 screen size is lower than a certain amount.  
-- - Mobile view replaces navbar with a hamburger menu for better visibility on smaller screens.
+ - Mobile view replaces navbar with a hamburger menu for better visibility on smaller screens.
 
 - As a user, I want to be able to filter through all face masks available on the site
-- - Page which renders all products is accessible via the landing page (when any user clicks 'Start Shopping'), and
+ - Page which renders all products is accessible via the landing page (when any user clicks 'Start Shopping'), and
 it is also available at all times on the site via the navbar which is stickied and always visible. 
-- - Both options tested and function as they should.
+ - Both options tested and function as they should.
 
 - As a user, I want to be able to see all face masks set by price (low-high/high-low)
-- - A feature available when the user is on the all products page, from there you are given the option to re-organise
+ - A feature available when the user is on the all products page, from there you are given the option to re-organise
 the list of existing products by their price (high - low)
--- Clicked on 'Start Shopping' from landing page, then clicked on Price: Low - High and items are organised as such.
--- Clicking on Price: High - Low reverses the above and also works as it should.
--- Test also done by clicking 'All Products' from navbar to the same result. 
+ - Clicked on 'Start Shopping' from landing page, then clicked on Price: Low - High and items are organised as such.
+ - Clicking on Price: High - Low reverses the above and also works as it should.
+ - Test also done by clicking 'All Products' from navbar to the same result. 
 
 - As a user, I want to be able to be able to filter the face masks by dark and light shades
--- Clicked on 'Shop' in the navbar
--- On the dropdown option provided, clicked on 'By Shade - Dark'
--- All items with the category 'Dark' are rendered / manual test also done with 'By Shade - Light' and both features
+ - Clicked on 'Shop' in the navbar
+ - On the dropdown option provided, clicked on 'By Shade - Dark'
+ - All items with the category 'Dark' are rendered / manual test also done with 'By Shade - Light' and both features
 function as they should.
 
 - As a user, I want to be able to search for specific face masks that suit my needs
--- The search feature takes to consideration any key words present in the description of the product, and also the colour
+ - The search feature takes to consideration any key words present in the description of the product, and also the colour
 category. 
--- As a test, a search carried out for 'red' will bring only the items with that colour added to their product model.
--- A separate search carried out after identifying a key word within the description of a specific product - this also
+ - As a test, a search carried out for 'red' will bring only the items with that colour added to their product model.
+ - A separate search carried out after identifying a key word within the description of a specific product - this also
 returns that product only (and any other products if they have that key word within the description). 
--- Search feature working and takes into argument both colour and description.
+ - Search feature working and takes into argument both colour and description.
 
 - As a user, I want to be able to add individual items to my bag and continue shopping
--- Clicked on a random product
--- Added product to the page
--- Clicked on 'continue shopping' instead of going to the checkout page
--- Item remained in the bag 
+ - Clicked on a random product
+ - Added product to the page
+ - Clicked on 'continue shopping' instead of going to the checkout page
+ - Item remained in the bag 
 
 - As a user, I want to be able to remove any items from my bag before proceeding to checkout
--- Added an item to the bag
--- Clicked on bag icon to get to the item in the bag
--- Clicked on 'x' button shown under the heading 'Remove' and the item was removed, and the page (using the if statements
+ - Added an item to the bag
+ - Clicked on bag icon to get to the item in the bag
+ - Clicked on 'x' button shown under the heading 'Remove' and the item was removed, and the page (using the if statements
 set up) is rendered to show that no items are in the bag, and provides a link to go back to the products page.
 
 - As a user, I want the option to save my details when purchasing items 
--- Added an item to the shopping back
--- Completed the checkout process and clicked on 'Save this delivery information to my profile'
--- Clicked on 'My Profile' and the details entered during the checkout process are shown (with the 
+ - Added an item to the shopping back
+ - Completed the checkout process and clicked on 'Save this delivery information to my profile'
+ - Clicked on 'My Profile' and the details entered during the checkout process are shown (with the 
 option to update any details)
 
 - As a user, I want to be able to see a history of all my previous purchases
--- Following the above test/purchase, once again clicked on 'My Profile'
--- The order number as well as time, date, name, and order total information shown on the right handside of the page.
--- Clicked on the individual order number to see a further breakdown of the payments made for the product, as well 
+ - Following the above test/purchase, once again clicked on 'My Profile'
+ - The order number as well as time, date, name, and order total information shown on the right handside of the page.
+ - Clicked on the individual order number to see a further breakdown of the payments made for the product, as well 
 as the address that was billed.
 
 
@@ -231,21 +231,22 @@ for Postgres which return 'Heroku Postgress'.
 ### Secret Keys
 - In the 'Settings' tab within the app, you click 'Reveal config vars'.
 - You then add your projects variables here:
--- AWS_ACCESS_KEY_ID
--- AWS_SECRET_ACCESS_KEY
--- DATABASE_URL 
--- SECRET_KEY
--- STRIPE_PUBLIC_KEY
--- STRIPE_SECRET_KEY
--- STRIPE_WH_SECRET
--- USE_AWS
+
+ - AWS_ACCESS_KEY_ID
+ - AWS_SECRET_ACCESS_KEY
+ - DATABASE_URL 
+ - SECRET_KEY
+ - STRIPE_PUBLIC_KEY
+ - STRIPE_SECRET_KEY
+ - STRIPE_WH_SECRET
+ - USE_AWS
 
 - Following this, installed unicorn and updated the requirements.txt file to include this
 - Created the Procfile
 - Added Heroku link to settings.py (project level) 'ALLOWED_HOSTS' variable
 - Within Heroku, and on the 'Deploy' tab, there is a row whihc states 'Deployment Method'
--- The Heroku app was then connected to Github directly via Heroku
--- Git push from gitpod is also updated both on github and heroku automatically if automatic deploys is enabled.
+ - The Heroku app was then connected to Github directly via Heroku
+ - Git push from gitpod is also updated both on github and heroku automatically if automatic deploys is enabled.
 
 # Credits
 
