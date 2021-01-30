@@ -83,13 +83,15 @@
                                 {% if request.user.is_authenticated %}
                                 <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
                                 <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                                {% if request.user.is_superuser %}
+                                <li><a class="dropdown-item" href="{% url 'add_product' %}">Manage Products</a></li>
+                                {% endif %}
                                 {% else %}
                                 <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
                                 <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 {% endif %}
                             </ul>
                         </li>
