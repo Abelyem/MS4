@@ -164,18 +164,18 @@ was picked up as an error by the HTML validator and was fixed following this che
 ## Manual Testing
 ### User stories
 - As a user, I want to be able to use the site on any device
--- Due to the use of bootstrap classes / components the site is accessible on any device.
--- Media queries used in an attempt to improve some aspects of the site on certain screen sizes/stack items when
+- - Due to the use of bootstrap classes / components the site is accessible on any device.
+- - Media queries used in an attempt to improve some aspects of the site on certain screen sizes/stack items when
 screen size is lower than a certain amount.  
--- Mobile view replaces navbar with a hamburger menu for better visibility on smaller screens.
+- - Mobile view replaces navbar with a hamburger menu for better visibility on smaller screens.
 
 - As a user, I want to be able to filter through all face masks available on the site
--- Page which renders all products is accessible via the landing page (when any user clicks 'Start Shopping'), and
+- - Page which renders all products is accessible via the landing page (when any user clicks 'Start Shopping'), and
 it is also available at all times on the site via the navbar which is stickied and always visible. 
--- Both options tested and function as they should.
+- - Both options tested and function as they should.
 
 - As a user, I want to be able to see all face masks set by price (low-high/high-low)
--- A feature available when the user is on the all products page, from there you are given the option to re-organise
+- - A feature available when the user is on the all products page, from there you are given the option to re-organise
 the list of existing products by their price (high - low)
 -- Clicked on 'Start Shopping' from landing page, then clicked on Price: Low - High and items are organised as such.
 -- Clicking on Price: High - Low reverses the above and also works as it should.
