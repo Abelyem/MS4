@@ -37,9 +37,17 @@ body {
 .landing-page-text {
     width: 33%;
     padding-bottom: 1%;
+    color:#686765;
 }
 
 @media (min-width: 767.98px) {
+    .landing-page-text {
+        width: 40%;
+        padding-bottom: 2%;
+    }
+} 
+
+@media (max-width: 767.98px) {
     .landing-page-text {
         width: 40%;
         padding-bottom: 2%;
