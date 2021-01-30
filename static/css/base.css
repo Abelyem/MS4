@@ -81,14 +81,12 @@ from a previous incomplete portfolio project of my own -- https://abel-portfolio
 .mask-img {
     display: grid;
     grid-area: mask-img;
-    background-color: #efebdf;
     text-align: center;
 }
 
 .mask-info {
     display: grid;
     grid-area: mask-info;
-    background-color: #efebdf;
 }
 
 /* -- products.html styling -- */ 
