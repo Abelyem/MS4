@@ -24,37 +24,37 @@ purpose/reason the site exists - to sell face masks, and be guided directly to t
 
 [Landing page - ](https://github.com/Abelyem/MS4/blob/master/static/wireframes/img/landing_page_wireframe.png)
 
-The landing page was designed with this template in mind. In terms of usage of colour, and the simple image + text
+- The landing page was designed with this template in mind. In terms of usage of colour, and the simple image + text
 combined to create a simple landing page which explains the purpose of the site whilst not overpopulating the user 
 with content / information when first visitng (or re-visitng) the site.
 
-The navbar was made to have a white background so it remains visible on all pages despite the content / colours that 
+- The navbar was made to have a white background so it remains visible on all pages despite the content / colours that 
 may be shown, take a different approach than the wireframe as I wanted the search feature to be clearly visible at all
 times, and not hidden behind an image / other components.
 
 
 [Items added to bag page - ](https://github.com/Abelyem/MS4/blob/master/static/wireframes/img/bag_wireframe.png)
 
-In a table format, the bag.html page, was designed with the above wireframe in mind. In my project, the items are each 
+- In a table format, the bag.html page, was designed with the above wireframe in mind. In my project, the items are each 
 placed on a row showing the image, name and description, price, quantity, and that item's total within a single row with
 an 'x' button at the end of each row allowing the user to remove any item added prior to proceeding to checkout.
 
 [Checkout page - ](https://github.com/Abelyem/MS4/blob/master/static/wireframes/img/checkout_wireframe.png)
 
-The checkout page was designed in a slightly different way to the wireframe shown above so that there was more space
+- The checkout page was designed in a slightly different way to the wireframe shown above so that there was more space
 for the user to fill in all their information, whilst provoding an order summary on the right of the page which would
 again show each item in the bag (in the process of being purchased), with the name + quantity shown, as well as the total
 figures for the order, any delivery charges, and finally the grand total the customer would have to pay.
 
 [User profile - ](https://github.com/Abelyem/MS4/blob/master/static/wireframes/img/user_profile.png)
 
-The user profile was designed/based off the boutique_ado project as the features within that project were relevant to my own.
+- The user profile was designed/based off the boutique_ado project as the features within that project were relevant to my own.
 The page shows the user's entered delivery details on one side (right), and an order summary of all previous purchases on the 
 the left side of the page.
 
 [Checkout success - ](https://github.com/Abelyem/MS4/blob/master/static/wireframes/img/checkout_success_wireframe.png)
 
-The checkout success page was created using a jumbotron, with additions so that the order summary, and billing details
+- The checkout success page was created using a jumbotron, with additions so that the order summary, and billing details
 would be splitinto two, using more space on the page whilst showing the customer all relevant information. It confirms
 the purchase was successful, then after a break shows the order summary which contains the full order number, name of the
 item bought (and quantity), purchased date, and again the details of the amounts paid - delivery, order total, and the grand
@@ -90,13 +90,13 @@ then continue shopping, or proceed to checkout from this page.
 
 - When hovered over, there is a change in shade of the buttons / bag icon so that the user is aware those links are clickable.
 
-## Clickable link in landing page / index.html
+### Clickable link in landing page / index.html
 - A clickable link is included within the landing page with the words 'Start Shopping'. Although the link sends you to all
 products (the same way the navbar option would), this is included in the landing page as the text signifies what the website
 offers, and then proceeds to allow the user to go straight into it as opposed to having to search around for any button
 that could lead them to the products page.
 
-## My Profile (for registered users)
+### My Profile (for registered users)
 - Upon logging in, the user is taken straight to the profile page where the page is split into two. One half of the page
 contains the users delivery address information, whilst the second contains a table with the users historic orders. 
 
@@ -104,7 +104,7 @@ contains the users delivery address information, whilst the second contains a ta
 so that the full number is not shown on the page. All order numbers are clickable links which take you to the checkout_success.html
 page.
 
-## Item purchased successfully / checkout_success.html
+### Item purchased successfully / checkout_success.html
 - Referenced above briefly, the checkout_success page is accesible once a user has purchased an item, or they can also reach this page
 from the 'My Profile' page, when reviewing historic orders.
 
@@ -113,14 +113,14 @@ the page is split into two divs with one containing the order number shown in fu
 (delivery fee, order total, and the grand total this comes to). The details provided during the purchase are shown on the second div, both 
 these items are centered.
 
-## Product management (for superuser/admin) and CRUD functionalities
+### Product management (for superuser/admin) and CRUD functionalities
 - Accessible via the 'My Account' --> 'Manage Products' option, only to superusers who are authenticated to add / remove / edit products.
 
-### Add item
+#### Add item
 - Clicking on the 'Manage Products' option takes the superuser to a page which has a form with the input being identical to the products information.
 On this page, the user is able to add new products which are then displayed directly on the all products page. 
 
-### Edit / Delete items
+#### Edit / Delete items
 - The edit and delete product options are again only accessible to superusers who are authenticated. These features are shown on the all products page,
 as well as the specific page made to view individual products (mask_detail.html). 
 
@@ -130,12 +130,11 @@ specific information. You can then on this page make any required edits to an ex
 - The delete option works from the page you are on and is not rendered on any separate page, simply clicking 'Delete' on any particular item will delete/
 remove that item from the list of products. Deleting an item from the mask_detail page will return you to the all products page.
 
-
-# Bag
+### Bag
 - Any products added to the bag from the mask_detail (where individual products are shown) are rendered on this page.
+- The user can at this stage remove any items in from the bag by clicking an 'x' provided at the end of each row.
 
-
-## Session cookies
+#### Session cookies
 - Session cookies used to keep items within customer's bag unless removed. This allows the user to shop over the course
 of any time period, and the items will remain in the bag until cookies are cleared / items are manually removed. 
 
