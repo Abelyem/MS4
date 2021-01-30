@@ -34,6 +34,28 @@ body {
     padding-top: 20vh;
 }
 
+.landing-page-text {
+    width: 33%;
+    padding-bottom: 1%;
+}
+
+@media (min-width: 767.98px) {
+    .landing-page-text {
+        width: 40%;
+        padding-bottom: 2%;
+    }
+} 
+
+.landing-page-button {
+    float: left;
+    text-decoration: none;
+    color: black;
+}
+
+.landing-page-button:hover {
+    color:#686765;
+}
+
 
 /* -- mask_detail.html styling for showing individual product, snippets copied 
 from a previous incomplete portfolio project of my own -- https://abel-portfolio-main.herokuapp.com/ */
